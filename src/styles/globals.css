@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* small helpers used by app (keeps same look) */
+:root{ --accent:#f6b244; --bg:#0b1020; --muted:#97a3b2; }
+.title-display{ font-family:"Playfair Display", serif; }
+.glass{ background:rgba(255,255,255,0.02); backdrop-filter:blur(6px); border:1px solid rgba(255,255,255,0.03); }
+.poster-round{ border-radius:12px; box-shadow:0 12px 36px rgba(2,6,23,0.7); overflow:hidden; }
+.input{ background:transparent; border:1px solid rgba(255,255,255,0.06); padding:.6rem; border-radius:.5rem; color:#e6eef8; }
