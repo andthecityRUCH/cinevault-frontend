@@ -2,9 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{--accent:#f6b244;}
-body{background:#0b1020;font-family:Inter,ui-sans-serif,system-ui;}
-.title-display{font-family:'Playfair Display',serif;}
-.glass{background:rgba(255,255,255,0.02);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.03);}
-.poster-round{border-radius:12px;box-shadow:0 12px 36px rgba(2,6,23,0.7);}
-.input{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:.6rem;border-radius:.5rem;color:#e6eef8;}
+/* Core colors & typography */
+:root {
+  --accent: #f6b244;
+  --bg: #0b1020;
+  --card: #0f1724;
+  --muted: #97a3b2;
+}
+
+/* Base */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: #e6eef8;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Display font helper */
+.title-display {
+  font-family: "Playfair Display", serif;
+}
+
+/* Reusable glass panel */
+.glass {
+  background-color: rgba(255,255,255,0.02);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* Posters / cards */
+.poster-round {
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(2,6,23,0.7);
+  overflow: hidden;
+}
+
+/* Generic input style */
+.input {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  color: #e6eef8;
+  outline: none;
+}
+
+/* Small helper */
+.text-muted {
+  color: var(--muted);
+}
